@@ -3,16 +3,15 @@
 @tailwind utilities;
 
 body {
-  @apply m-0 p-0 bg-[#f1f3f6];
+  margin: 0;
+  padding: 0;
+  background-color: #f1f3f6;
 }
 
-.debug{
-  @apply border border-red-800
+.debug {
+  border: 1px solid red;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
-// *{
-//   @apply debug
-// }

@@ -5,7 +5,7 @@ const StartingCard = ({ image, title, btnlabel, link, handlebtn }) => {
   return (
     <div
       style={{ backgroundImage: `url(${image})` }}
-      className={`w-2/12 flex flex-col items-center   h-[342px] bg-no-repeat bg-bottom p-8 pt-16 gap-8`}
+      className={`w-2/12 flex flex-col items-center h-[342px] bg-no-repeat bg-bottom p-8 pt-16 gap-8`}
     >
       <p className="text-3xl text-center">{title}</p>
 
