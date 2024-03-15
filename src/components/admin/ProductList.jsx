@@ -1,14 +1,14 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import swal from "sweetalert";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
-  const [page, setPage] = useState([]);
+  const [page] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const navigate = useParams();
+  // const navigate = useParams();
 
   const getProducts = async () => {
     setLoading(true);
@@ -27,7 +27,7 @@ const ProductList = () => {
 
   useEffect(() => {
     getProducts();
-  }, []);
+  }, [getProducts]);
 
   const DeleteProduct = async (id) => {
     await axios

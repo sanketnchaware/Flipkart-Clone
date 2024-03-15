@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useMemo, useState } from "react";
-import { useLocation, Link, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 
 const CreateForm = ({ id }) => {
@@ -64,7 +64,7 @@ const CreateForm = ({ id }) => {
         rating: state?.rating,
         price: state?.price,
       });
-  }, [id]);
+  }, [id, state]);
 
   return (
     <div>
@@ -92,7 +92,7 @@ const CreateForm = ({ id }) => {
             type="text"
           />
 
-          <img className="w-44 h-44" src={params?.image} alt="image prod" />
+          <img className="w-44 h-44" src={params?.image} alt="prod_image" />
 
           <input
             placeholder="rating"

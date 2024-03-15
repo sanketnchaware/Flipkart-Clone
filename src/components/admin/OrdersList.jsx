@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const OrdersList = () => {
-  const [loading, setLoading] = useState(false);
+  const [setLoading] = useState(false);
   const [orders, setOrders] = useState([]);
   console.log("orders:", orders);
 

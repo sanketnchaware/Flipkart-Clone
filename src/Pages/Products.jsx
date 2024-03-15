@@ -51,7 +51,7 @@ const Products = () => {
   };
 
   useEffect(() => {
-    page > 0 && getProducts();
+    if (page > 0) getProducts();
   }, [page]);
 
   useMemo(() => {
